@@ -44,8 +44,9 @@ public class CarService {
 
     public Page<Car> getAllCars(Integer page, Integer size) {
         Page pageOfCars = carRepository.findAll(PageRequest.of(page, size));
-        loginfo("uma completed");
-         loginfo("successfully retrieved all cars");
+        log.info("uma completed");
+         
+        log.info("successfully retrieved all cars2");
         
                  return pageOfCars;
     }
